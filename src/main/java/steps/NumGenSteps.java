@@ -4,7 +4,7 @@ import io.qameta.allure.Step;
 
 public class NumGenSteps {
 
-    @Step
+    @Step("Проверка на наличие цифр")
     public void haveNumber(String a){
         assertTrue(a.chars().anyMatch(Character::isDigit));
     }
